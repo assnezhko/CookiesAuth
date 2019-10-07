@@ -1,0 +1,55 @@
+﻿@model CookiesAuth.Models.ViewModels.RegisterModel
+
+@{
+    Layout = null;
+}
+
+<link type="text/css" rel="stylesheet" href="~/lib/bootstrapv3.3.7/dist/css/bootstrap.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="~/css/Auth/Reg/Reg.css" />
+
+<div class="container">
+    <div class="row main-form">
+        @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal" }))
+        {
+            @*<div class="validation" asp-validation-summary="ModelOnly"></div>*@
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Email, new { @class="cols-sm-2 control-label"})
+                <div class="cols-sm-10">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-users fa"></i></span>
+                        @Html.TextBoxFor(m => m.Email, new { type = "email", @class = "form-control", id = "Email", placeholder = @Resource.RegPlaceHolderEmail })
+                    </div>
+                </div>
+                @Html.ValidationMessageFor(m => m.Email)
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(m => m.Password, "Password", new { @class = "cols-sm-2 control-label" })
+                <div class="cols-sm-10">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-lock fa-lg"></i></span>
+                        @Html.PasswordFor(p => p.Password, new { @class = "form-control", id = "Password", placeholder = @Resource.RegPlaceHolderPassword })
+                    </div>
+                </div>
+                @Html.ValidationMessageFor(m => m.Password)
+            </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(m => m.ConfirmPassword, "Confirm", new { @class = "cols-sm-2 control-label" })
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock fa-lg"></i></span>
+                            @Html.PasswordFor(p => p.ConfirmPassword, new { @class = "form-control", id = "Confirm", placeholder = @Resource.RegPlaceHolderConfirm })
+                        </div>
+                    </div>
+                    @Html.ValidationMessageFor(m => m.ConfirmPassword)
+                </div>
+
+                <div class="form-group ">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block login-button">@Resource.RegButtonName</button>   
+                </div>
+        }
+    </div>
+</div>

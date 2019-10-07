@@ -1,0 +1,23 @@
+﻿@model CookiesAuth.Models.ViewModels.ErrorViewModel
+
+@{
+    Layout = null;
+}
+
+<link type="text/css" rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
+
+<link type="text/css" rel="stylesheet" href="~/css/Error/Error.css" />
+
+<!------ Include the above in your HEAD tag ---------->
+<div class="page-wrap d-flex flex-row align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <span class="display-1 d-block">@Model.StatusCode</span>
+                <div class="mb-4 lead">An error occurred while processing your request</div>
+                <div class="mb-4 lead">Error message: @Model.Message</div>
+                <a href=@Url.Action("Index", "Home") class="btn btn-link">Back to Home</a>
+            </div>
+        </div>
+    </div>
+</div>

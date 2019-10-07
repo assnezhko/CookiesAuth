@@ -1,0 +1,9 @@
+C:\Users\LenovoG580\source\repos\CookiesAuth\Models\bin\Debug\netcoreapp2.0\Models.deps.json
+C:\Users\LenovoG580\source\repos\CookiesAuth\Models\bin\Debug\netcoreapp2.0\Models.dll
+C:\Users\LenovoG580\source\repos\CookiesAuth\Models\bin\Debug\netcoreapp2.0\Models.pdb
+C:\Users\LenovoG580\source\repos\CookiesAuth\Models\obj\Debug\netcoreapp2.0\Models.csproj.CoreCompileInputs.cache
+C:\Users\LenovoG580\source\repos\CookiesAuth\Models\obj\Debug\netcoreapp2.0\Models.AssemblyInfoInputs.cache
+C:\Users\LenovoG580\source\repos\CookiesAuth\Models\obj\Debug\netcoreapp2.0\Models.AssemblyInfo.cs
+C:\Users\LenovoG580\source\repos\CookiesAuth\Models\obj\Debug\netcoreapp2.0\Models.dll
+C:\Users\LenovoG580\source\repos\CookiesAuth\Models\obj\Debug\netcoreapp2.0\Models.pdb
+C:\Users\LenovoG580\source\repos\CookiesAuth\Models\obj\Debug\netcoreapp2.0\Models.csprojResolveAssemblyReference.cache
